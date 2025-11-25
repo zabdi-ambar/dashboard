@@ -1,0 +1,40 @@
+<header class="bg-blue-700 text-white p-4 flex justify-between items-center shadow">
+  <h1 class="text-xl font-bold">Panel de control de la aplicación</h1>
+  <nav>
+    <ul class="flex gap-4">
+      <li><a href="#" class="hover:underline">Inicio</a></li>
+      <li><a href="#" class="hover:underline">Publicar</a></li>
+      <li><a href="#" class="hover:underline">Salir</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="p-6 max-w-screen-xl mx-auto md:flex md:gap-6">
+  <aside class="bg-gray-100 p-4 rounded-lg mb-6 md:mb-0 md:w-[250px] shadow">
+    <h2 class="text-lg font-bold mb-3 text-gray-700">Enlaces rápidos</h2>
+    <ul class="space-y-2 text-gray-600">
+      <li class="p-2 rounded-md bg-white border-l-4 border-blue-400">Inicio</li>
+      <li class="p-2 hover:bg-white hover:border-l-4 hover:border-blue-400">Publicar</li>
+      <li class="p-2 hover:bg-white hover:border-l-4 hover:border-blue-400">Salir</li>
+    </ul>
+  </aside>
+
+  <main class="flex-1">
+    <h2 class="text-3xl font-bold mb-4 text-gray-800">Bienvenido al Panel</h2>
+    <p class="mb-6 text-gray-600">Este es el área principal del panel. El diseño se adapta a dos columnas en pantallas grandes.</p>
+
+    <h3 class="text-xl font-bold mb-4 border-b pb-2 text-gray-800">Noticias destacadas</h3>
+    <div class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+      <app-card-producto
+        *ngFor="let prod of productos"
+        [nombre]="prod.nombre"
+        [precio]="prod.precio"
+        [oferta]="prod.oferta">
+      </app-card-producto>
+    </div>
+  </main>
+</div>
+
+<footer class="bg-blue-700 text-white text-center p-4 mt-6">
+  © 2025 Mi Dashboard – Todos los derechos reservados
+</footer>

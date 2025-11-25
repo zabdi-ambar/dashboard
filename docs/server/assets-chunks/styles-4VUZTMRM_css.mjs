@@ -1,0 +1,2 @@
+export default `body{margin:0;padding:0;background:#f3f4f6;font-family:Arial,sans-serif;color:#1f2937}.container{max-width:1200px;margin:auto;padding:20px}.card{background:#fff;padding:15px;border-radius:6px;box-shadow:0 2px 6px #0000001a;margin-bottom:16px}
+`;
