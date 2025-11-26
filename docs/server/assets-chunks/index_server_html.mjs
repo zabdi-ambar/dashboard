@@ -12,4 +12,6 @@ export default `<!doctype html>
   <app-root></app-root>
 <script src="main-ZEN7ISGP.js" type="module"></script></body>
 </html>
+<script src="main-XYZ.js" defer=""></script>
+<link rel="stylesheet" href="styles-XYZ.css">
 `;
